@@ -1,0 +1,25 @@
+--------Text file expalining my procedures--------------------
+1. Basically as the problem stated we had to predict How severe can an airplane accident be?
+
+2. As it was a Machine Learning problem I prefered to use Python programming language due to 
+ vast libraries and community support and Spyder IDE due to its support for Scientific Programming.
+ 
+3. I loaded the training and testing data using pandas library as it is a powerful library for data
+processing in Python and analyzed the data for nan values, outliers etc. I got that the data belongs to classification problem.
+
+4. The severity column was our label column or target column need to be predicted for test data.
+But it was a categorical column so I encoded it using sklearn library for better model training.
+
+5. Then I seperated features and labels from the training data.
+
+6. After that I applied feature extraction to get the most prominent features to predict the labels.
+ I used statsmodel library to do this. I had to add a constant column before applying the feature extraction looping as 
+ statsmodel need that. I also used numpy library to remove the unwanted features.
+ 
+7. Then I applied many classification models like SVC, Random Forest, Logistic Regression, KNN, 
+Decision Tree for model training . All of them provided a good training score but when I applied 
+them on the test data all of them performed poorly. This was due to overfitting of the training data.
+
+8. Then I applied bagging classifier on all the models and to the the suprise Decsision Tree classifier
+not only provided a good score for training data but for testing data as well.
+
